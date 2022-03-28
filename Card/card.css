@@ -11,13 +11,9 @@
   --dark-shadow: 0 2px 6px var(--dark-color);
 }
 
-.text-dark {
-  color: rgb(255, 255, 255);
-}
+/* Shadow */
 
-.text-gray {
-  color: rgb(128, 128, 128);
-}
+/* Card */
 
 .card-container {
   display: flex;
@@ -35,18 +31,6 @@
   padding: 10px;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
-}
-
-.card-shadow {
-  box-shadow: var(--shadow);
-}
-
-.card-light-shadow {
-  box-shadow: var(--light-shadow);
-}
-
-.card-dark-shadow {
-  box-shadow: var(--dark-shadow);
 }
 
 /* card contents */
