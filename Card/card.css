@@ -37,18 +37,6 @@
   background-color: rgb(255, 255, 255);
 }
 
-.card-shadow {
-  box-shadow: var(--shadow);
-}
-
-.card-light-shadow {
-  box-shadow: var(--light-shadow);
-}
-
-.card-dark-shadow {
-  box-shadow: var(--dark-shadow);
-}
-
 /* card contents */
 
 .card-header {
