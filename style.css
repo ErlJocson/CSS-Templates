@@ -1,19 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   --shadow: 0 2px 6px rgb(118, 118, 118);
   --light-color: rgb(216, 216, 216);
   --dark-color: rgb(38, 38, 38);
   --light-shadow: 0 2px 6px var(--light-color);
   --dark-shadow: 0 2px 6px var(--dark-color);
+
+  --blue-color: rgb(112, 148, 204);
+  --red-color: rgb(204, 112, 140);
 }
-
-/* Shadow */
-
-/* Card */
 
 .card-container {
   display: flex;
@@ -23,6 +17,7 @@
 .jc-center {
   justify-content: center;
 }
+
 /* card designs */
 
 .card {
@@ -30,7 +25,7 @@
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--blue-color);
 }
 
 /* card contents */
@@ -47,11 +42,9 @@
 }
 
 .details a {
-  color: rgb(0, 6, 175);
+  color: rgb(19, 23, 145);
   text-decoration: none;
 }
-
-/* responsive designs */
 
 @media screen and (max-width: 900px) {
   .card {
@@ -75,4 +68,52 @@
   .details * {
     font-size: 14px;
   }
+}
+
+/* Button */
+
+.btn-success {
+  padding: 10px;
+  font-size: 16px;
+  background: var(--blue-color);
+  cursor: pointer;
+  color: rgb(203, 203, 203);
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  transition: all 500ms ease;
+}
+
+.btn-danger {
+  padding: 10px;
+  font-size: 16px;
+  background: var(--red-color);
+  cursor: pointer;
+  color: rgb(203, 203, 203);
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  transition: all 500ms ease;
+}
+
+.btn-danger:hover {
+  color: black;
+}
+
+.btn-success:hover {
+  color: black;
+}
+
+/* Shadow */
+
+.shadow {
+  box-shadow: var(--shadow);
+}
+
+.light-shadow {
+  box-shadow: var(--light-shadow);
+}
+
+.dark-shadow {
+  box-shadow: var(--dark-shadow);
 }
